@@ -2,7 +2,10 @@ import React from "react";
 
 export default function Background() {
   const [count, setCount] = React.useState(0);
-  const colors = ["bg-blue-100", "bg-blue-200", "bg-blue-300", "bg-blue-400", "bg-blue-300", "bg-blue-200", "bg-blue-100"];
+  const colors = [
+    "bg-blue-100", "bg-blue-200", "bg-blue-300", 
+    "bg-blue-400", "bg-blue-300", "bg-blue-200", "bg-blue-100"
+  ];
   const sizes = [20, 40, 60, 80, 60, 40, 20];
 
   React.useEffect(() => {
@@ -23,7 +26,8 @@ export default function Background() {
           return (
             <div
               key={index}
-              className={`${shade} rounded-full mx-4 w-full h-${size} transition-colors  duration-500`}
+              className={`${shade} rounded-full mx-4 transition-colors duration-500`}
+              style={{ width: `${size}px`, height: `${size}px` }}
             />
           );
         })}
