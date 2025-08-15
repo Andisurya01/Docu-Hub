@@ -14,18 +14,15 @@ export default function Background() {
 
   // Semua warna dimasukkan supaya Tailwind tidak menghapusnya
   const blueShades = {
+    100: "bg-blue-100",
     200: "bg-blue-200",
     300: "bg-blue-300",
     400: "bg-blue-400",
-    500: "bg-blue-500",
-    600: "bg-blue-600",
-    700: "bg-blue-700",
-    800: "bg-blue-800",
   };
 
   return (
-    <div className="absolute inset-0 overflow-hidden z-0">
-      <div className="flex justify-center items-center w-screen min-h-screen blur-2xl">
+    <div className="absolute inset-0 overflow-hidden w-screen min-h-screen z-0">
+      <div className="flex justify-center items-center blur-xl">
         {Array.from({ length: colors.length }).map((_, index) => {
           const colorIndex = (index + count) % colors.length;
           const shade = colors[colorIndex];
