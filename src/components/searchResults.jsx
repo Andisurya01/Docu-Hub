@@ -6,7 +6,7 @@ export default function SearchResult({ item, open, setOpen }) {
 
     return (
         <div className={`absolute z-10 bg-white ${open ? "" : "translate-y-[100%]"} h-[90%] w-[95%] bottom-0 rounded-r-lg shadow hover:shadow-md transition duration-500 p-6 `}>
-            <div className="flex justify-between">
+            <div className="flex justify-between mb-4">
                 <h2 className="text-2xl font-semibold">Hasil Pencarian</h2>
                 <FaXmark size={24} onClick={setOpen} color="gray" />
             </div>

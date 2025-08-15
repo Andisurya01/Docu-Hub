@@ -19,15 +19,18 @@ export default function Home() {
             });
     }, []);
 
-    const filteredData = data.filter((item) => {
-        const term = searchTerm.toLowerCase();
-        return (
-            item.category.toLowerCase().includes(term) ||
-            item.title.toLowerCase().includes(term) ||
-            item.description.toLowerCase().includes(term) ||
-            item.link.toLowerCase().includes(term)
-        );
-    });
+    const filteredData = data
+        .filter((item) => {
+            const term = searchTerm.toLowerCase();
+            return (
+                item.category.toLowerCase().includes(term) ||
+                item.title.toLowerCase().includes(term) ||
+                item.description.toLowerCase().includes(term) ||
+                item.link.toLowerCase().includes(term)
+            );
+        })
+        .slice(0, 3);
+
 
     const handleKeyDown = (e) => {
         if (e.key === "Enter") {
@@ -35,9 +38,7 @@ export default function Home() {
                 return;
             }
             setOpen(true);
-            console.log(open);
         }
-        // Handle form submission
     };
 
     return (
@@ -55,19 +56,22 @@ export default function Home() {
                     onKeyDown={handleKeyDown}
 
                 />
-                {
-                    searchTerm === "" ? null :
-                        filteredData.length > 0 ? (
-                            <div className="absolute grid gap-4">
-                                {filteredData.map((item) => (
-                                    <File key={item.id} name={item.title} category={item.category} />
-                                ))}
-                            </div>
-                        ) : (
-                            <p className="text-gray-500 text-center">Tidak ada hasil ditemukan.</p>
-                        )
+                <div className="w-full relative ">
 
-                }
+                    {
+                        searchTerm === "" ? null :
+                            filteredData.length > 0 ? (
+                                <div className="absolute grid w-full gap-4">
+                                    {filteredData.map((item) => (
+                                        <File key={item.id} name={item.title} category={item.category} link={item.link} />
+                                    ))}
+                                </div>
+                            ) : (
+                                <p className="text-gray-500 text-center">Tidak ada hasil ditemukan.</p>
+                            )
+
+                    }
+                </div>
             </div>
         </div>
     );
