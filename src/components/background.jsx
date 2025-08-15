@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Background() {
   const [count, setCount] = React.useState(0);
-  const colors = [100, 200, 300, 400, 300, 200, 100];
+  const colors = ["bg-blue-100", "bg-blue-200", "bg-blue-300", "bg-blue-400", "bg-blue-300", "bg-blue-200", "bg-blue-100"];
   const sizes = [20, 40, 60, 80, 60, 40, 20];
 
   React.useEffect(() => {
@@ -11,14 +11,6 @@ export default function Background() {
     }, 2000);
     return () => clearInterval(interval);
   }, [colors.length]);
-
-  // Semua warna dimasukkan supaya Tailwind tidak menghapusnya
-  const blueShades = {
-    100: "bg-blue-100",
-    200: "bg-blue-200",
-    300: "bg-blue-300",
-    400: "bg-blue-400",
-  };
 
   return (
     <div className="absolute inset-0 overflow-hidden w-screen min-h-screen z-0">
@@ -31,8 +23,7 @@ export default function Background() {
           return (
             <div
               key={index}
-            //   style={{ width: `${size}px`, height: `${size}px` }}
-              className={`${blueShades[shade]} rounded-full mx-4 w-full h-${size} transition-colors  duration-500`}
+              className={`${shade} rounded-full mx-4 w-full h-${size} transition-colors  duration-500`}
             />
           );
         })}
