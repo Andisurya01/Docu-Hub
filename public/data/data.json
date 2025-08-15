@@ -1,5 +1,5 @@
 {
-    "category1": [
+    "Pvsyst": [
         {
             "id": 1,
             "title": "Document 1",
@@ -19,7 +19,7 @@
             "link": "https://example.com/doc3"
         }
     ],
-    "category2": [
+    "Layout PV": [
         {
             "id": 4,
             "title": "Document 4",
@@ -39,7 +39,7 @@
             "link": "https://example.com/doc6"
         }
     ],
-    "category3": [
+    "BOQ/HPS": [
         {
             "id": 7,
             "title": "Document 7",
@@ -57,6 +57,166 @@
             "title": "Document 9",
             "description": "This is the ninth document.",
             "link": "https://example.com/doc9"
+        }
+    ],
+    "Survey Report" : [
+        {
+            "id": 10,
+            "title": "Document 10",
+            "description": "This is the tenth document.",
+            "link": "https://example.com/doc10"
+        },
+        {
+            "id": 11,
+            "title": "Document 11",
+            "description": "This is the eleventh document.",
+            "link": "https://example.com/doc11"
+        },
+        {
+            "id": 12,
+            "title": "Document 12",
+            "description": "This is the twelfth document.",
+            "link": "https://example.com/doc12"
+        }
+    ],
+    "Drawing Elektrikal": [
+        {
+            "id": 13,
+            "title": "Document 13",
+            "description": "This is the thirteenth document.",
+            "link": "https://example.com/doc13"
+        },
+        {
+            "id": 14,
+            "title": "Document 14",
+            "description": "This is the fourteenth document.",
+            "link": "https://example.com/doc14"
+        },
+        {
+            "id": 15,
+            "title": "Document 15",
+            "description": "This is the fifteenth document.",
+            "link": "https://example.com/doc15"
+        }
+    ],
+    "Drawing Sipil": [
+        {
+            "id": 16,
+            "title": "Document 16",
+            "description": "This is the sixteenth document.",
+            "link": "https://example.com/doc16"
+        },
+        {
+            "id": 17,
+            "title": "Document 17",
+            "description": "This is the seventeenth document.",
+            "link": "https://example.com/doc17"
+        },
+        {
+            "id": 18,
+            "title": "Document 18",
+            "description": "This is the eighteenth document.",
+            "link": "https://example.com/doc18"
+        }
+    ],
+    "Methode Statement": [
+        {
+            "id": 19,
+            "title": "Document 19",
+            "description": "This is the nineteenth document.",
+            "link": "https://example.com/doc19"
+        },
+        {
+            "id": 20,
+            "title": "Document 20",
+            "description": "This is the twentieth document.",
+            "link": "https://example.com/doc20"
+        },
+        {
+            "id": 21,
+            "title": "Document 21",
+            "description": "This is the twenty-first document.",
+            "link": "https://example.com/doc21"
+        }
+    ],
+    "Calculation Engineering": [
+        {
+            "id": 22,
+            "title": "Document 22",
+            "description": "This is the twenty-second document.",
+            "link": "https://example.com/doc22"
+        },
+        {
+            "id": 23,
+            "title": "Document 23",
+            "description": "This is the twenty-third document.",
+            "link": "https://example.com/doc23"
+        },
+        {
+            "id": 24,
+            "title": "Document 24",
+            "description": "This is the twenty-fourth document.",
+            "link": "https://example.com/doc24"
+        }
+    ],
+    "SOP": [
+        {
+            "id": 25,
+            "title": "Document 25",
+            "description": "This is the twenty-fifth document.",
+            "link": "https://example.com/doc25"
+        },
+        {
+            "id": 26,
+            "title": "Document 26",
+            "description": "This is the twenty-sixth document.",
+            "link": "https://example.com/doc26"
+        },
+        {
+            "id": 27,
+            "title": "Document 27",
+            "description": "This is the twenty-seventh document.",
+            "link": "https://example.com/doc27"
+        }
+    ],
+    "Datasheet": [
+        {
+            "id": 28,
+            "title": "Document 28",
+            "description": "This is the twenty-eighth document.",
+            "link": "https://example.com/doc28"
+        },
+        {
+            "id": 29,
+            "title": "Document 29",
+            "description": "This is the twenty-ninth document.",
+            "link": "https://example.com/doc29"
+        },
+        {
+            "id": 30,
+            "title": "Document 30",
+            "description": "This is the thirtieth document.",
+            "link": "https://example.com/doc30"
+        }
+    ],
+    "Daily, Weekly, Monthly Construction Report": [
+        {
+            "id": 31,
+            "title": "Document 31",
+            "description": "This is the thirty-first document.",
+            "link": "https://example.com/doc31"
+        },
+        {
+            "id": 32,
+            "title": "Document 32",
+            "description": "This is the thirty-second document.",
+            "link": "https://example.com/doc32"
+        },
+        {
+            "id": 33,
+            "title": "Document 33",
+            "description": "This is the thirty-third document.",
+            "link": "https://example.com/doc33"
         }
     ]
 }

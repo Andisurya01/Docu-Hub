@@ -69,12 +69,12 @@ export default function Home() {
                     </button>
                 </div>
 
-                <div className="w-full relative ">
+                <div className="w-full relative">
 
                     {
                         searchTerm === "" ? null :
                             filteredData.length > 0 ? (
-                                <div className="absolute grid w-full gap-4">
+                                <div className="absolute top-4 grid w-full gap-4 pt-2">
                                     {filteredData.map((item) => (
                                         <File key={item.id} name={item.title} category={item.category} link={item.link} />
                                     ))}
