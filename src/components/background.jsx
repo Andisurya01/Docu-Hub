@@ -6,7 +6,7 @@ export default function Background() {
     "bg-blue-100", "bg-blue-200", "bg-blue-300", 
     "bg-blue-400", "bg-blue-300", "bg-blue-200", "bg-blue-100"
   ];
-  const sizes = [20, 40, 60, 80, 60, 40, 20];
+  const sizes = [5, 10, 15, 20, 15, 10, 5];
 
   React.useEffect(() => {
     const interval = setInterval(() => {
@@ -26,8 +26,8 @@ export default function Background() {
           return (
             <div
               key={index}
-              className={`${shade} rounded-full mx-4 w-${size} h-${size} transition-colors duration-500`}
-            //   style={{ width: `${size}px`, height: `${size}px` }}
+              className={`${shade} rounded-full mx-4 transition-colors duration-500`}
+              style={{ width: `${size}rem`, height: `${size}rem` }}
             />
           );
         })}
