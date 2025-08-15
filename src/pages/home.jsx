@@ -47,15 +47,28 @@ export default function Home() {
             <div className="max-w-5xl mx-auto">
                 <h1 className="text-gray-950 text-5xl md:text-9xl font-medium text-center">Docu Hub</h1>
                 <p className="text-gray-700 text-sm md:text-md text-center p-4">Silakan masukkan kata kunci pencarian.</p>
-                <input
-                    type="text"
-                    placeholder="Cari berdasarkan kategori, title, deskripsi, atau link..."
-                    className="w-full p-3 text-sm md:text-md border border-gray-300 rounded-lg mb-6 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                    onKeyDown={handleKeyDown}
+                <div className="flex items-stretch">
+                    <input
+                        type="text"
+                        placeholder="Cari berdasarkan kategori, title, deskripsi, atau link..."
+                        className="w-full p-3 text-sm md:text-md border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}
+                        onKeyDown={handleKeyDown}
+                    />
+                    <button
+                        className="bg-blue-500 text-white px-4 rounded-lg ml-2 hover:bg-blue-600 transition-colors duration-300"
+                        onClick={() => {
+                            if (searchTerm === "") {
+                                return;
+                            }
+                            setOpen(true);
+                        }}
+                    >
+                        Cari
+                    </button>
+                </div>
 
-                />
                 <div className="w-full relative ">
 
                     {
