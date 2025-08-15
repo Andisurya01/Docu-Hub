@@ -26,8 +26,8 @@ export default function Background() {
           return (
             <div
               key={index}
-              className={`${shade} rounded-full mx-4 transition-colors duration-500`}
-              style={{ width: `${size}px`, height: `${size}px` }}
+              className={`${shade} rounded-full mx-4 w-${size} h-${size} transition-colors duration-500`}
+            //   style={{ width: `${size}px`, height: `${size}px` }}
             />
           );
         })}
