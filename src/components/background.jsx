@@ -17,7 +17,7 @@ export default function Background() {
 
   return (
     <div className="absolute inset-0 overflow-hidden z-0">
-      <div className="flex justify-center items-center w-screen min-h-screen">
+      <div className="flex justify-center items-center w-screen min-h-screen blur-2xl">
         {Array.from({ length: colors.length }).map((_, index) => {
           const colorIndex = (index + count) % colors.length;
           const shade = colors[colorIndex];
