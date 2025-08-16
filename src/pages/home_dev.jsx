@@ -17,7 +17,8 @@ export default function Home() {
             try {
                 setLoading(true);
                 const projects = await fetchSheetData();
-                
+                console.log(projects);
+
                 const transformedData = projects.flatMap(project => 
                     project.engineering.map(eng => ({
                         id: `${project.no}-${eng.type}`,
@@ -41,7 +42,6 @@ export default function Home() {
 
         loadData();
 
-        // Optional: Add auto-refresh every 5 minutes
         const interval = setInterval(loadData, 300000);
         return () => clearInterval(interval);
     }, []);

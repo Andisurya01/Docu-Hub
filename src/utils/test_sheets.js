@@ -6,9 +6,9 @@ const fetchSheetData = async () => {
     
     const response = await fetch(csvUrl);
     const csvData = await response.text();
+    console.log(response);
     
     const rows = csvData.split('\n');
-    const headers = rows[0].split(',');
     
     const projects = [];
     let currentProject = null;
